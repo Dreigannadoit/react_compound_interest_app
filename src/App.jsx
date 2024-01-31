@@ -1,10 +1,10 @@
-import { Route, BrowserRouter as Router, Routes } from "react-router-dom"
-import CompuondIntCal from "./pages/CompuondIntCal"
+import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
+import CompuondIntCal from "./pages/CompuondIntCal";
 
 const App = () => {
   return (
     <main>
-        <Router>
+        <Router basename="/react_compound_interest_calculator">
             <Routes>
               <Route path="/" element={<CompuondIntCal />} />
             </Routes>
@@ -13,4 +13,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;
