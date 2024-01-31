@@ -4,7 +4,7 @@ import CompuondIntCal from "./pages/CompuondIntCal";
 const App = () => {
   return (
     <main>
-        <Router basename="/react_compound_interest_calculator">
+        <Router basename="/react_compound_interest_app">
             <Routes>
               <Route path="/" element={<CompuondIntCal />} />
             </Routes>
