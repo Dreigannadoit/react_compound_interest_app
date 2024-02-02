@@ -69,6 +69,14 @@ section {
   height: 45px;
 }
 
+.interface .userInput button{
+  width: 10%;
+  padding: 7px;
+  color: #242424;
+  font-size: 100%;
+  
+}
+
 .interface .result{
   height: 20%;
   width: 100%;

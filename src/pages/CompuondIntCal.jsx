@@ -11,7 +11,13 @@ const CompuondIntCal = () => {
     const isRateEmpty = !rate;
     const isTimeEmpty = !time;
 
-    const result = (principle * Math.pow(1 + (rate / 100) / compoundRate,compoundRate * time )).toFixed(2);
+    let result;
+
+    if (principle < 0 || compoundRate < 0 ||  principle < 0){
+        result;
+    } else {
+        result = (principle * Math.pow(1 + (rate / 100) / compoundRate,compoundRate * time )).toFixed(2);
+    }    
 
     const handleSelectChange = (event) => {
       const selectedValue = event.target.value;
@@ -28,7 +34,11 @@ const CompuondIntCal = () => {
       }
     };
 
-    console.log(compoundRate)
+    const clearUI = () => {
+        setPrinciple('');
+        setRate('');
+        setTime('');
+    };
 
     return (
         <section>
@@ -72,6 +82,8 @@ const CompuondIntCal = () => {
                             type="number"
                         />
                     </label>
+
+                    <button onClick={clearUI}>Clear All</button>
                 </div>
                 
                 <div className="result">
