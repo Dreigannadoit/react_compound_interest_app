@@ -13,11 +13,13 @@ const CompuondIntCal = () => {
 
     let result;
 
-    if (principle < 0 || compoundRate < 0 ||  principle < 0){
-        result;
+    if (principle < 0 || rate < 0 || time < 0) {
+        result = "Cannot input below 0";
+    } else if (isPrincipleEmpty || isRateEmpty || isTimeEmpty) {
+        result = "Input Missing Field";
     } else {
-        result = (principle * Math.pow(1 + (rate / 100) / compoundRate,compoundRate * time )).toFixed(2);
-    }    
+        result = (principle * Math.pow(1 + (rate / 100) / compoundRate, compoundRate * time)).toFixed(2);
+    }
 
     const handleSelectChange = (event) => {
       const selectedValue = event.target.value;
@@ -87,11 +89,7 @@ const CompuondIntCal = () => {
                 </div>
                 
                 <div className="result">
-                    {isNaN(result) ? (
-                        'Input Missing Field'
-                    ) : (
-                        result
-                    )}
+                    {result}
                 </div>
             </div>
 
@@ -119,11 +117,7 @@ const CompuondIntCal = () => {
                 </div>
 
                 <div className="variables">
-                {isNaN(result) ? (
-                    'Input Missing Field'
-                ) : (
-                    result
-                )}
+                    {result}
                 </div>
             </div>
         </section>
