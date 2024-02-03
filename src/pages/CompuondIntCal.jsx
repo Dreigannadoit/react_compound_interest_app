@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 
 const CompuondIntCal = () => {
     const [principle, setPrinciple] = useState();
-    const [compoundRate, setCompoundRate] = useState('0');
+    const [compoundRate, setCompoundRate] = useState('52');
     const [rate, setRate] = useState();
     const [time, setTime] = useState();
 
@@ -69,7 +69,6 @@ const CompuondIntCal = () => {
                         is compounded per year:
 
                         <select value={compoundRate.toString()} onChange={handleSelectChange}>
-                            <option value="n">Choose Input</option>
                             <option value="52">Weekly</option>
                             <option value="12">Monthly</option>
                             <option value="4">Quarterly</option>
