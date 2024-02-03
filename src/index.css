@@ -165,3 +165,11 @@ section {
   }
   
 }
+
+@media only screen and (max-width: 500px) {
+  .formula .eq span:nth-child(1),
+  .formula .eq span:nth-child(3){
+    font-size: 200%;
+  }
+
+}

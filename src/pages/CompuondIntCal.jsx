@@ -96,9 +96,6 @@ const CompuondIntCal = () => {
             <div className="showCalc">
                 <h1 style={{textAlign: 'center'}}>Equation</h1>
                 <div className="formula">
-                    <div className="total">
-                        <span>A = </span>
-                    </div>
 
                     <div className="eq">
                         {isPrincipleEmpty ? 'P' : principle}
@@ -118,7 +115,7 @@ const CompuondIntCal = () => {
                 </div>
 
                 <div className="variables">
-                    {result}
+                    Amount = {result}
                 </div>
             </div>
         </section>
