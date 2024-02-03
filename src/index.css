@@ -44,8 +44,8 @@ section {
 
 .interface,
 .interface .userInput,
-.interface .userInput label,
-.interface .result{
+.interface .userInput label
+/*,.interface .result*/{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -60,6 +60,7 @@ section {
   height: 60%;
   width: 100%;
   gap: 18px;
+  gap: 25px;
 }
 
 .interface .userInput label select,
@@ -70,7 +71,7 @@ section {
 }
 
 .interface .userInput button{
-  width: 10%;
+  width: 40%;
   padding: 7px;
   color: #242424;
   font-size: 100%;

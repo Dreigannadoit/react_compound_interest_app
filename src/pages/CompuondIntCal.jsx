@@ -88,9 +88,9 @@ const CompuondIntCal = () => {
                     <button onClick={clearUI}>Clear All</button>
                 </div>
                 
-                <div className="result">
+                {/* <div className="result">
                     {result}
-                </div>
+                </div> */}
             </div>
 
             <div className="showCalc">
