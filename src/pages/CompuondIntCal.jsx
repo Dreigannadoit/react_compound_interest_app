@@ -24,16 +24,6 @@ const CompuondIntCal = () => {
     const handleSelectChange = (event) => {
       const selectedValue = event.target.value;
       setCompoundRate(selectedValue);
-
-      if (selectedValue === "52") {
-        setCompoundRate(52)
-      } else if (selectedValue === "12") {
-        setCompoundRate(12)
-      } else if (selectedValue === "4") {
-        setCompoundRate(4)
-      } else if (selectedValue === "1") {
-        setCompoundRate(1)
-      }
     };
 
     const clearUI = () => {
