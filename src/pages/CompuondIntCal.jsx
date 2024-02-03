@@ -85,7 +85,7 @@ const CompuondIntCal = () => {
                         />
                     </label>
 
-                    <button onClick={clearUI}>Clear All</button>
+                    <button onClick={clearUI}>Reset Calculator</button>
                 </div>
                 
                 {/* <div className="result">
@@ -94,6 +94,7 @@ const CompuondIntCal = () => {
             </div>
 
             <div className="showCalc">
+                <h1 style={{textAlign: 'center'}}>Equation</h1>
                 <div className="formula">
                     <div className="total">
                         <span>A = </span>
