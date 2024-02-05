@@ -1,8 +1,7 @@
-# React + Vite
+Source code:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repo contains a vite and react experiment with real time computational rendering. 
 
-Currently, two official plugins are available:
+It utilizes the compound interest formula to see how dynamicly change values relative the the values inputed by the user.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [View Project](https://dreigannadoit.github.io/react_compound_interest_app/) 
